@@ -1,0 +1,121 @@
+.landing_page {
+  font-family: Poppins;
+  overflow-x: hidden;
+}
+.logo_image {
+  height: 40px;
+}
+.icon_menu {
+  font-size: 30px;
+  margin-top: 12%;
+  margin-left: auto;
+  float: right;
+}
+.illustration_working_image {
+  margin-left: auto;
+  height: 26rem;
+}
+.shorter_link {
+  width: 60%;
+  font-size: 45px;
+  font-weight: 700;
+}
+.build_your_brand {
+  width: 57%;
+  font-size: 25px;
+  font-weight: 400;
+}
+.get_started {
+  height: 5rem;
+  width: 15rem;
+  font-size: 30px;
+  border-radius: 60px;
+  margin-left: auto;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  margin-top: 55%;
+  position: absolute;
+  background-color: hsl(0, 0%, 75%);
+}
+.shorten_link_field {
+  height: 13rem;
+  width: 20rem;
+  z-index: 9;
+  margin-top: 30%;
+  border-radius: 15px;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("/assets/images/resources/bg-shorten-mobile.svg");
+  background-size: 230px 150px;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+}
+.input_field {
+  /*margin-top: 10rem;*/
+  margin-left: 7%;
+  height: 60px;
+  width: 85%;
+}
+.shorten_button {
+  /*height: 3rem;*/
+  width: 17rem;
+  font-size: 30px;
+  /*margin-top: 15%;*/
+  margin-left: 7%;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+.link_field {
+  background-color: white;
+  z-index: 9;
+  margin-top: 90%;
+  height: 11.5rem;
+  width: 20rem;
+  border-radius: 7px;
+}
+.shortened_link {
+  font-size: 18px;
+  color: hsl(180, 66%, 49%);
+}
+.copy_button {
+  height: 3rem;
+  width: 17rem;
+  font-size: 25px;
+  margin-left: 7%;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+.copied_field {
+  background-color: white;
+  z-index: 9;
+  margin-top: 145%;
+  height: 11.5rem;
+  width: 20rem;
+  border-radius: 7px;
+}
+.violet {
+  background-color: hsl(257, 27%, 26%);
+}
+.cyan {
+  background-color: hsl(180, 66%, 49%);
+}
+.ad_statistics {
+  z-index: 9;
+  margin-top: 215%;
+}
+.track_link {
+  /*width: 80%;*/
+  font-size: 25px;
+  font-weight: lighter;
+}
+.brand_recognition {
+  margin-top: 295%;
+  z-index: 9;
+  height: 11.5rem;
+  width: 20rem;
+  border-radius: 7px;
+  background-color: white;
+}
