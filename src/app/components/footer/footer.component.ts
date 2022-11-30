@@ -14,7 +14,7 @@ export class FooterComponent implements OnInit {
   }
 
   onClick() {
-    this.isCopied = !this.isCopied;
+    this.isCopied = true;
   }
 
 }
