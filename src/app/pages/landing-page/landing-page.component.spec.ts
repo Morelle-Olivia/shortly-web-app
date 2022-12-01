@@ -22,4 +22,12 @@ describe('LandingPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should contain <section> with "landing page works"', function () {
+    const landingPageElement: HTMLElement = fixture.nativeElement;
+    const section = landingPageElement.querySelector('section')!;
+
+    expect(section.textContent).toEqual('Landing page works')
+
+  });
 });

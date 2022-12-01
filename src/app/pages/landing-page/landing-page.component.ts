@@ -20,7 +20,6 @@ export class LandingPageComponent implements OnInit {
               private localStorageService: LocalStorageService) { }
 
   ngOnInit(): void {
-    // this.createShorterLink();
     this.shortenUrl = new FormGroup({
       url: new FormControl('', Validators.required),
     });
@@ -33,7 +32,6 @@ export class LandingPageComponent implements OnInit {
   createShorterLink() {
     const subscription = this.shortenLinkService.createShortLink(this.shortenUrl.value.url)
       .subscribe( (res: LinkShorteningModel) => {
-        // localStorage.setItem(this.shortLinks.push(res));
         this.localStorageService.setSettings(this.shortLinks.push(res));
         this.shortenUrl.reset();
       })

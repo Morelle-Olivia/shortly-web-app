@@ -8,6 +8,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
 import { CopyComponent } from './components/copy/copy.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
     LandingPageComponent
   ],
   imports: [
+    RouterModule,
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule
