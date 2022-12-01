@@ -4,6 +4,9 @@
   </div>
   <div class="d-flex align-items-stretch align-items-xxl-center flex-column flex-xxl-row">
     <p class="shortened_link ">{{ link.result.short_link2 }}</p>
-    <button class="btn btn-sm mr-xxl-2 copy_button" [ngClass]="{'violet' : isCopied, 'cyan' : !isCopied}" (click)="onClick()">{{isCopied ? 'Copied!':'Copy'}}</button>
+    <button class="btn btn-sm mr-xxl-2 copy_button"
+            value="click to copy"
+            [ngClass]="{'violet' : isCopied, 'cyan' : !isCopied}"
+            (click)="onClick(link.result.short_link2)">{{isCopied ? 'Copied!':'Copy'}}</button>
   </div>
 </div>

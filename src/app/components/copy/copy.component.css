@@ -29,3 +29,12 @@
 .cyan {
   background-color: hsl(180, 66%, 49%);
 }
+
+@media (max-width: 375px) {
+  .copy_button {
+    width: 100%;
+    margin: 0% 0% 5%;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+  }
+}

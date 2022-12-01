@@ -1,7 +1,7 @@
 <div style="overflow-x: hidden" class="landing_page"  >
-  <section style="background-color: white; padding-bottom: 10rem">
+  <section class="first_section">
     <nav class="navbar navbar-expand-lg navbar-light pt-5">
-      <div class="container-fluid" style="margin: 0% 6%">
+      <div class="container-fluid nav_div">
         <a class="navbar-brand" href="#">
           <img class="ms-5 logo_image" src="/assets/images/resources/logo.svg">
         </a>
@@ -26,7 +26,7 @@
       </div>
     </nav>
     <div class="d-flex flex-column-reverse flex-xxl-row">
-      <div style="width: 70rem; margin: 2% 10%; position: relative">
+      <div class="header">
         <p class="shorter_link">More than just shorter links</p>
         <p class="build_your_brand">Build your brand's recognition and get detailed insights on how your links are performing.</p>
         <button class="btn get_started">Get Started</button>
@@ -36,8 +36,8 @@
       </div>
     </div>
   </section>
-  <section style="background-color: hsl(0, 0%, 75%); min-height: 60vh; position: relative">
-    <div style="margin: 0 auto; top: -5.5rem; width: 80%; position: relative">
+  <section class="second_section">
+    <div class="shorten_link_class">
       <div class="shorten_link_field">
         <form class="d-flex flex-column justify-content-center flex-xxl-row align-items-center justify-content-xxl-between" [formGroup]="shortenUrl" (ngSubmit)="createShorterLink()" style="height: 11rem; padding: 0 4%;">
           <input type="email" class="form-control input_field" formControlName="url" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Shorten a link here...">
@@ -93,35 +93,35 @@
   <section class="boost">
     <div class="d-flex justify-content-center">
       <div class="boost_link d-grid">
-        <b class="text-center" style="font-size: 45px;">Boosts your links today</b>
+        <b class="text-center">Boosts your links today</b>
         <button class="btn boost_get_started">Get Started</button>
       </div>
     </div>
   </section>
-  <section class="d-flex justify-content-between footer">
-    <div>
+  <section class="d-flex flex-column flex-xxl-row d-xxl-flex justify-content-xxl-between footer">
+    <div class="mx-auto mx-xxl-4">
       <img class="footer_logo_image" src="/assets/images/resources/logo.svg">
     </div>
-    <div style="width: 40%; color: white; margin: 5%; padding-left: 20%">
-      <b>Features</b>
+    <div class="features_column mx-auto mx-xxl-4">
+      <b class="col_title">Features</b>
       <p class="mt-4 hover_link">Link Shortening</p>
       <p class="hover_link">Branded Links</p>
       <p class="hover_link">Analytics</p>
     </div>
-    <div style="color: white; margin: 5% 0%">
+    <div class="resources_column mx-auto mx-xxl-4">
       <b>Resources</b>
       <p class="mt-4 hover_link">Blog</p>
       <p class="hover_link">Developers</p>
       <p class="hover_link">Support</p>
     </div>
-    <div style="color: white; margin: 5% 10%">
+    <div class="company_column">
       <b>Company</b>
       <p class="mt-4 hover_link">About</p>
       <p class="hover_link">Our Team</p>
       <p class="hover_link">Careers</p>
       <p class="hover_link">Contacts</p>
     </div>
-    <div class="d-flex justify-content-between" style="width: 20%; margin: 5%; padding-right: 5%">
+    <div class="d-flex justify-content-between icon_column">
       <img class="media_icon" src="/assets/images/resources/icon-facebook.svg">
       <img class="media_icon" src="/assets/images/resources/icon-twitter.svg">
       <img class="media_icon" src="/assets/images/resources/icon-pinterest.svg">

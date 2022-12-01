@@ -12,19 +12,19 @@ export class FooterComponent implements OnInit {
   // url = '';
   shortenUrl = new FormGroup({});
   shortLinks: LinkShorteningModel[] = [
-    {
-      ok: true,
-      result: {
-        short_link2: 'qe.or/uqiuoer',
-        short_link: '',
-        original_link: 'https://morel.lazy',
-        code: '',
-        full_share_link: '',
-        full_short_link: '',
-        full_short_link2: '',
-        share_link: '',
-      }
-    }
+    // {
+    //   ok: true,
+    //   result: {
+    //     short_link2: '',
+    //     short_link: '',
+    //     original_link: '',
+    //     code: '',
+    //     full_share_link: '',
+    //     full_short_link: '',
+    //     full_short_link2: '',
+    //     share_link: '',
+    //   }
+    // }
   ];
 
   constructor(private shortenLinkService: ShortenLinkService) { }
