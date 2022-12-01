@@ -1,32 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import {ShortenLinkService} from "../../services/shorten-link.service";
-import {LinkShorteningModel} from "../../model/link-shortening.model";
 import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/forms";
+import {LinkShorteningModel} from "../../model/link-shortening.model";
+import {ShortenLinkService} from "../../services/shorten-link.service";
 import {LocalStorageService} from "../../services/local-storage/local-storage.service";
+import {Subscription} from "rxjs";
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  selector: 'app-landing-page',
+  templateUrl: './landing-page.component.html',
+  styleUrls: ['./landing-page.component.css']
 })
-export class FooterComponent implements OnInit {
+export class LandingPageComponent implements OnInit {
   submitted = false;
   shortenUrl = new FormGroup({});
-  shortLinks: LinkShorteningModel[] = [
-    // {
-    //   ok: true,
-    //   result: {
-    //     short_link2: '',
-    //     short_link: '',
-    //     original_link: '',
-    //     code: '',
-    //     full_share_link: '',
-    //     full_short_link: '',
-    //     full_short_link2: '',
-    //     share_link: '',
-    //   }
-    // }
-  ];
+  shortLinks: LinkShorteningModel[] = [];
+  subscriptions: Subscription[] = [];
 
   constructor(private shortenLinkService: ShortenLinkService,
               private localStorageService: LocalStorageService) { }
@@ -49,6 +37,7 @@ export class FooterComponent implements OnInit {
         this.localStorageService.setSettings(this.shortLinks.push(res));
         this.shortenUrl.reset();
       })
+    this.subscriptions.push(subscription);
   }
 
 }

@@ -1,133 +1,30 @@
-<div style="overflow-x: hidden" class="landing_page"  >
-  <section class="first_section">
-    <nav class="navbar navbar-expand-lg navbar-light pt-5">
-      <div class="container-fluid nav_div">
-        <a class="navbar-brand" href="#">
-          <img class="ms-5 logo_image" src="/assets/images/resources/logo.svg">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
-            <li class="nav-item">
-              <a class="nav-link ms-4 active" aria-current="page" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
-            </li>
-          </ul>
-          <button class="btn btn-sm login">Login</button>
-          <button class="btn btn-sm signUp" style="margin-right: 10%">Sign Up</button>
-        </div>
-      </div>
-    </nav>
-    <div class="d-flex flex-column-reverse flex-xxl-row">
-      <div class="header">
-        <p class="shorter_link">More than just shorter links</p>
-        <p class="build_your_brand">Build your brand's recognition and get detailed insights on how your links are performing.</p>
-        <button class="btn get_started">Get Started</button>
-      </div>
-      <div>
-        <img class="illustration_working_image" src="/assets/images/resources/illustration-working.svg">
-      </div>
-    </div>
-  </section>
-  <section class="second_section">
-    <div class="shorten_link_class">
-      <div class="shorten_link_field">
-        <form class="d-flex flex-column justify-content-center flex-xxl-row align-items-center justify-content-xxl-between" [formGroup]="shortenUrl" (ngSubmit)="createShorterLink()" style="height: 11rem; padding: 0 4%;">
-          <input type="email" class="form-control input_field" formControlName="url" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Shorten a link here...">
-          <button class="btn btn-sm shorten_button mt-4 m-xxl-0">Shorten It!</button>
-        </form>
-      </div>
-
-      <app-copy [link]="link" *ngFor="let link of shortLinks"></app-copy>
-
-      <div class="d-flex justify-content-center">
-        <div class="ad_statistics">
-          <b class="text-center" style="font-size: 50px; margin-left: 17%">Advanced Statistics</b>
-          <p class="text-center mt-2 track_link">Track how your links are performing across the web with our advanced statistics dashboard.</p>
-        </div>
-      </div>
-
-      <div style="position: relative; margin-top: 6rem;">
-        <div class="timeline">
-        </div>
-        <div class="d-flex flex-column align-items-center flex-xxl-row d-xxl-flex justify-content-xxl-between" style="z-index: 10; position: relative">
-          <div class="ccard">
-            <div class="mx-auto mx-xxl-4 ccard_icon">
-              <img class="ccard_pic" src="/assets/images/resources/icon-brand-recognition.svg">
-            </div>
-            <div class="ccard_text">
-              <b style="font-size: 28px;">Brand Recognition</b>
-              <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
-            </div>
-          </div>
-          <div class="ccard" style="margin-top: 4rem">
-            <div class="ccard_icon mx-auto mx-xxl-4 ">
-              <img class="ccard_pic" src="/assets/images/resources/icon-detailed-records.svg">
-            </div>
-            <div class="ccard_text">
-              <b style="font-size: 30px">Detailed Records</b>
-              <p >Gain insights into who is clicking your links. Knowing when and where people engage in your content helps inform better decisions.</p>
-            </div>
-          </div>
-          <div class="ccard" style="margin-top: 8rem">
-            <div class="ccard_icon mx-auto mx-xxl-4 ">
-              <img class="ccard_pic" src="/assets/images/resources/icon-fully-customizable.svg">
-            </div>
-            <div class="ccard_text">
-              <b style="font-size: 30px">Fully customizable</b>
-              <p >Gain insights into who is clicking your links. Knowing when and where people engage in your content helps inform better decisions.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <section class="boost">
-    <div class="d-flex justify-content-center">
-      <div class="boost_link d-grid">
-        <b class="text-center">Boosts your links today</b>
-        <button class="btn boost_get_started">Get Started</button>
-      </div>
-    </div>
-  </section>
-  <section class="d-flex flex-column flex-xxl-row d-xxl-flex justify-content-xxl-between footer">
-    <div class="mx-auto mx-xxl-4">
-      <img class="footer_logo_image" src="/assets/images/resources/logo.svg">
-    </div>
-    <div class="features_column mx-auto mx-xxl-4">
-      <b class="col_title">Features</b>
-      <p class="mt-4 hover_link">Link Shortening</p>
-      <p class="hover_link">Branded Links</p>
-      <p class="hover_link">Analytics</p>
-    </div>
-    <div class="resources_column mx-auto mx-xxl-4">
-      <b>Resources</b>
-      <p class="mt-4 hover_link">Blog</p>
-      <p class="hover_link">Developers</p>
-      <p class="hover_link">Support</p>
-    </div>
-    <div class="company_column">
-      <b>Company</b>
-      <p class="mt-4 hover_link">About</p>
-      <p class="hover_link">Our Team</p>
-      <p class="hover_link">Careers</p>
-      <p class="hover_link">Contacts</p>
-    </div>
-    <div class="d-flex justify-content-between icon_column">
-      <img class="media_icon" src="/assets/images/resources/icon-facebook.svg">
-      <img class="media_icon" src="/assets/images/resources/icon-twitter.svg">
-      <img class="media_icon" src="/assets/images/resources/icon-pinterest.svg">
-      <img class="media_icon" src="/assets/images/resources/icon-instagram.svg">
-    </div>
-  </section>
-
-
-</div>
+<section class="d-flex flex-column flex-xxl-row d-xxl-flex justify-content-xxl-between footer">
+  <div class="mx-auto mx-xxl-4">
+    <img class="footer_logo_image" src="/assets/images/resources/logo.svg">
+  </div>
+  <div class="features_column mx-auto mx-xxl-4">
+    <b class="col_title">Features</b>
+    <p class="mt-4 hover_link">Link Shortening</p>
+    <p class="hover_link">Branded Links</p>
+    <p class="hover_link">Analytics</p>
+  </div>
+  <div class="resources_column mx-auto mx-xxl-4">
+    <b>Resources</b>
+    <p class="mt-4 hover_link">Blog</p>
+    <p class="hover_link">Developers</p>
+    <p class="hover_link">Support</p>
+  </div>
+  <div class="company_column">
+    <b>Company</b>
+    <p class="mt-4 hover_link">About</p>
+    <p class="hover_link">Our Team</p>
+    <p class="hover_link">Careers</p>
+    <p class="hover_link">Contacts</p>
+  </div>
+  <div class="d-flex justify-content-between icon_column">
+    <img class="media_icon" src="/assets/images/resources/icon-facebook.svg">
+    <img class="media_icon" src="/assets/images/resources/icon-twitter.svg">
+    <img class="media_icon" src="/assets/images/resources/icon-pinterest.svg">
+    <img class="media_icon" src="/assets/images/resources/icon-instagram.svg">
+  </div>
+</section>

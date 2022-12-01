@@ -1,0 +1,292 @@
+.landing_page {
+  font-family: Poppins;
+}
+.first_section {
+  background-color: white;
+  padding-bottom: 10rem
+}
+.header {
+  width: 70rem;
+  margin: 2% 10%;
+  position: relative
+}
+.shorter_link {
+  width: 100%;
+  margin-top: 17%;
+  font-size: 75px;
+  font-weight: 700;
+}
+.build_your_brand {
+  width: 80%;
+  font-size: 21px;
+  font-weight: 400;
+}
+.get_started {
+  width: 10rem;
+  font-size: 20px;
+  border-radius: 60px;
+  margin-left: auto;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+.get_started:hover {
+  opacity: 50%;
+}
+.illustration_working_image {
+  margin-top: 8%;
+  margin-left: 15%;
+  height: 30rem;
+  overflow-x: hidden;
+}
+.second_section {
+  background-color: hsl(0, 0%, 75%);
+  min-height: 60vh;
+  position: relative
+}
+.shorten_link_class {
+  margin: 0 auto;
+  top: -5.5rem;
+  width: 80%;
+  position: relative
+}
+.shorten_link_field {
+  border-radius: 15px;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("/assets/images/resources/bg-shorten-desktop.svg");
+  background-size: 100% 100%;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+}
+.input_field {
+  width: 78%;
+  height: 60px;
+  border-radius: 10px;
+}
+.required_field {
+  display: grid;
+  color: hsl(0, 87%, 67%);
+}
+.shorten_button {
+  height: 60px;
+  width: 14rem;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+.shorten_button:hover {
+  background-color: hsl(180, 66%, 70%);
+}
+.copied_field {
+  height: 10%;
+  margin-top: 1.5%;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0 3% 0;
+}
+.ad_statistics {
+  margin-top: 10%;
+  width: 50%;
+}
+.stats {
+  font-size: 50px;
+  margin-left: 17%
+}
+.track_link {
+  font-size: 25px;
+  font-weight: lighter;
+}
+.brand_recognition {
+
+}
+.ccard {
+  width: 24rem;
+  border-radius: 7px;
+  background-color: white;
+  padding: 0 2%;
+  height: 18rem;
+}
+.ccard_icon{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 70px;
+  background-color: hsl(257, 27%, 26%);
+  margin-top: -2.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ccard_text {
+  margin-top: 15%;
+  font-size: 18px;
+}
+.brand_text {
+}
+.detailed_record {
+  z-index: 9;
+  height: 17rem;
+  width: 20rem;
+  border-radius: 7px;
+  background-color: white;
+}
+.detailed_icon {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 70px;
+  margin-left: 37%;
+  z-index: 9;
+  background-color: hsl(257, 27%, 26%);
+}
+.timeline:before {
+  background-color: hsl(180, 66%, 49%);
+  height: 100%;
+  position: absolute;
+  width: 0.7rem;
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 1;
+}
+
+.boost {
+  background-color: hsl(257, 27%, 26%);
+  min-height: 40vh;
+  position: relative;
+  background-image: url("/assets/images/resources/bg-boost-desktop.svg");
+  background-size: 100% 100%;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+}
+.boost_link {
+  margin-top: 3%;
+  width: 50%;
+  color: white;
+  font-size: 45px;
+}
+.boost_get_started {
+  /*margin-top: 3%;*/
+  width: 10rem;
+  font-size: 20px;
+  border-radius: 60px;
+  margin: 3% auto;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+.boost_get_started:hover {
+  background-color: hsl(180, 66%, 70%);
+  cursor: pointer;
+}
+.footer {
+  background-color: hsl(260, 8%, 14%);
+  min-height: 50vh;
+  position: relative;
+}
+.footer_logo_image {
+  font-weight: 700;
+  padding: 60% 80%;
+  color: white;
+}
+.media_icon {
+  /*font-size: 5%;*/
+  height: 10%;
+  width: 17%;
+}
+.media_icon:hover {
+  color: hsl(180, 66%, 70%);
+  cursor: pointer;
+}
+.features_column {
+  width: 40%;
+  color: white;
+  margin: 5% 5%;
+  padding-left: 20%
+}
+.col_title {
+  font-weight: 700;
+  /*font-size: 20px;*/
+}
+.resources_column {
+  color: white;
+  margin: 5% 0%
+}
+.company_column {
+  color: white;
+  margin: 5% 7%;
+}
+.hover_link:hover {
+  color: hsl(180, 66%, 70%);
+  cursor: pointer;
+}
+.icon_column {
+  width: 20%;
+  margin: 5%;
+  padding-right: 5%
+}
+
+@media (min-width: 1400px) {
+  .timeline:before {
+    width: 100%;
+    position: absolute;
+    height: .7rem;
+    content: '';
+    left: 0;
+    top: 60%;
+    z-index: 1;
+    transform: translateX(0%);
+  }
+}
+@media (max-width: 375px) {
+  .illustration_working_image {
+    margin-left: 0%;
+  }
+  .shorter_link {
+    /*width: 5%;*/
+    font-size: 55px;
+    padding: 0% 7%;
+  }
+  .header {
+    width: 22rem;
+    text-align: center;
+    margin: 2% 0%;
+    position: relative
+  }
+  .build_your_brand {
+    width: 90%;
+    padding-left: 5%;
+    font-size: 21px;
+    font-weight: 400;
+  }
+  .shorten_link_field {
+    background-image: url("/assets/images/resources/bg-shorten-mobile.svg");
+    background-size: 70% 70%;
+    background-position: 100% 0%;
+  }
+  .stats {
+    width: 10%;
+    font-size: 33px;
+    margin-left: 0%
+  }
+  .ad_statistics {
+    margin-top: 30%;
+    width: 100%;
+  }
+  .ccard {
+    width: 20rem;
+    text-align: center;
+    border-radius: 7px;
+    padding: 0 10%;
+    height: 18rem;
+  }
+  .boost {
+    background-image: url("/assets/images/resources/bg-boost-mobile.svg");
+    background-size: 100% 100%;
+    background-position: 100% 0%;
+  }
+  .boost_link {
+    margin-top: 26%;
+    width: 90%;
+    font-size: 30px;
+  }
+}

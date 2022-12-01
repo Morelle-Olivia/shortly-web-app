@@ -7,13 +7,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
 import { CopyComponent } from './components/copy/copy.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    CopyComponent
+    CopyComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
