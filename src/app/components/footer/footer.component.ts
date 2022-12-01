@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {ShortenLinkService} from "../../services/shorten-link.service";
+import {LinkShorteningModel} from "../../model/link-shortening.model";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-footer',
@@ -6,15 +9,39 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  isCopied = false;
+  // url = '';
+  shortenUrl = new FormGroup({});
+  shortLinks: LinkShorteningModel[] = [
+    {
+      ok: true,
+      result: {
+        short_link2: 'qe.or/uqiuoer',
+        short_link: '',
+        original_link: 'https://morel.lazy',
+        code: '',
+        full_share_link: '',
+        full_short_link: '',
+        full_short_link2: '',
+        share_link: '',
+      }
+    }
+  ];
 
-  constructor() { }
+  constructor(private shortenLinkService: ShortenLinkService) { }
 
   ngOnInit(): void {
+    // this.createShorterLink();
+    this.shortenUrl = new FormGroup({
+      url: new FormControl('', Validators.required),
+    });
   }
 
-  onClick() {
-    this.isCopied = true;
+  createShorterLink() {
+    const subscription = this.shortenLinkService.createShortLink(this.shortenUrl.value.url)
+      .subscribe( (res: LinkShorteningModel) => {
+        this.shortLinks.push(res);
+        this.shortenUrl.reset();
+      })
   }
 
 }

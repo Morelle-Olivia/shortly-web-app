@@ -1,0 +1,9 @@
+<div class="d-flex flex-column align-items-stretch align-items-xxl-center flex-xxl-row justify-content-between link_field">
+  <div>
+    <p class="link">{{ link.result.original_link }}</p>
+  </div>
+  <div class="d-flex align-items-stretch align-items-xxl-center flex-column flex-xxl-row">
+    <p class="shortened_link ">{{ link.result.short_link2 }}</p>
+    <button class="btn btn-sm mr-xxl-2 copy_button" [ngClass]="{'violet' : isCopied, 'cyan' : !isCopied}" (click)="onClick()">{{isCopied ? 'Copied!':'Copy'}}</button>
+  </div>
+</div>

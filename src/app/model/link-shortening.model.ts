@@ -1,5 +1,5 @@
 export interface LinkShorteningModel {
-  ok: true,
+  ok: boolean,
   result: Result
 }
 

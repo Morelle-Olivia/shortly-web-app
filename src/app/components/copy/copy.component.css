@@ -1,0 +1,31 @@
+.link_field {
+  margin-top: 2%;
+  margin-bottom: -1%;
+  background-color: white;
+  height: 10%;
+  border-radius: 4px;
+  padding: 0 3% 0;
+}
+.link {
+  font-size: 25px;
+}
+.shortened_link {
+  font-size: 25px;
+  margin-top: 2%;
+  color: hsl(180, 66%, 49%);
+}
+.copy_button {
+  width: 7rem;
+  margin-left: 10%;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+.copy_button:hover {
+  opacity: 50%;
+}
+.violet {
+  background-color: hsl(257, 27%, 26%);
+}
+.cyan {
+  background-color: hsl(180, 66%, 49%);
+}

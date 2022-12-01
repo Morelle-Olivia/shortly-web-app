@@ -1,90 +1,7 @@
-<div style="overflow-x: hidden">
-  <div *ngIf="false" class="container landing_page">
-    <nav class="navbar nav navbar-expand-lg">
-      <img class="ms-5 logo_image" src="/assets/images/resources/logo.svg">
-      <div class="d-flex">
-        <ul class="menu">
-          <li><a class="ms-4"> Features </a></li>
-          <li><a class="ms-4"> Pricing </a></li>
-          <li><a class="ms-4"> Resources </a></li>
-        </ul>
-      </div>
-      <button class="btn btn-sm login">Login</button>
-      <button class="btn btn-sm signUp">Sign Up</button>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
-    <div class="d-flex">
-      <div style="width: 70rem">
-        <p class="shorter_link">More than just shorter links</p>
-        <p class="build_your_brand">Build your brand's recognition and get detailed insights on how your links are performing.</p>
-        <button class="btn get_started">Get Started</button>
-      </div>
-      <div>
-        <img class="illustration_working_image" src="/assets/images/resources/illustration-working.svg">
-      </div>
-    </div>
-    <div class="shorten_link_field">
-      <form class="d-flex">
-        <div class="mt-4">
-          <input type="email" class="form-control input_field" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Shorten a link here...">
-        </div>
-        <div>
-          <button class="btn btn-sm mt-5 shorten_button">Shorten It!</button>
-        </div>
-      </form>
-    </div>
-    <div class="d-flex link_field">
-      <div>
-        <p class="link">www.linked.com</p>
-      </div>
-      <p class="shortened_link">www.linked.com</p>
-      <div style="width: 3%;">
-        <button class="btn btn-sm me-2 copy_button" [ngClass]="{'violet' : isCopied, 'cyan' : !isCopied}" (click)="onClick()">{{isCopied ? 'Copied!':'Copy'}}</button>
-      </div>
-    </div>
-    <div class="d-flex copied_field">
-      <div>
-        <p class="link">www.linked.com</p>
-      </div>
-      <p class="shortened_link">www.linked.com</p>
-      <div style="width: 3%;">
-        <button class="btn btn-sm me-2 copy_button" [ngClass]="{'violet' : isCopied, 'cyan' : !isCopied}" (click)="onClick()">{{isCopied ? 'Copied!':'Copy'}}</button>
-      </div>
-    </div>
-    <div class="ad_statistics">
-      <b class="text-center" style="font-size: 50px; margin-left: 17%">Advanced Statistics</b>
-      <p class="text-center mt-2 track_link">Track how your links are performing across the web with our advanced statistics dashboard.</p>
-    </div>
-      <div class="ms-4 overlay brand_recognition">
-        <div class="brand_text">
-          <b style="font-size: 28px; padding: 7%">Brand Recognition</b>
-          <p style="padding: 7%" >Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
-        </div>
-      </div>
-      <div class="overlay brand_icon">
-        <img class="brand_pic" src="/assets/images/resources/icon-brand-recognition.svg">
-      </div>
-      <div class="ms-4 overlay detailed_record">
-        <div class="brand_text">
-          <b style="font-size: 30px">Detailed Records</b>
-          <p style="padding: 5%" >Gain insights into who is clicking your links. Knowing when and where people engage in your content helps inform better decisions.</p>
-        </div>
-        <div class="overlay detailed_icon">
-          <img class="brand_pic" src="/assets/images/resources/icon-detailed-records.svg">
-        </div>
-      </div>
-  </div>
-  <!--<div class="overlay">-->
-
-  <!--</div>-->
-
+<div style="overflow-x: hidden" class="landing_page"  >
   <section style="background-color: white; padding-bottom: 10rem">
     <nav class="navbar navbar-expand-lg navbar-light pt-5">
-      <div class="container-fluid">
+      <div class="container-fluid" style="margin: 0% 6%">
         <a class="navbar-brand" href="#">
           <img class="ms-5 logo_image" src="/assets/images/resources/logo.svg">
         </a>
@@ -108,25 +25,8 @@
         </div>
       </div>
     </nav>
-<!--    <nav class="navbar nav navbar-expand-lg">-->
-      <img class="ms-5 logo_image" src="/assets/images/resources/logo.svg">
-<!--      <div class="d-flex">-->
-<!--        <ul class="menu">-->
-<!--          <li><a class="ms-4"> Features </a></li>-->
-<!--          <li><a class="ms-4"> Pricing </a></li>-->
-<!--          <li><a class="ms-4"> Resources </a></li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--      <button class="btn btn-sm login">Login</button>-->
-<!--      <button class="btn btn-sm signUp">Sign Up</button>-->
-
-<!--      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"-->
-<!--              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--        <span class="navbar-toggler-icon"></span>-->
-<!--      </button>-->
-<!--    </nav>-->
     <div class="d-flex flex-column-reverse flex-xxl-row">
-      <div style="width: 70rem">
+      <div style="width: 70rem; margin: 2% 10%; position: relative">
         <p class="shorter_link">More than just shorter links</p>
         <p class="build_your_brand">Build your brand's recognition and get detailed insights on how your links are performing.</p>
         <button class="btn get_started">Get Started</button>
@@ -139,29 +39,13 @@
   <section style="background-color: hsl(0, 0%, 75%); min-height: 60vh; position: relative">
     <div style="margin: 0 auto; top: -5.5rem; width: 80%; position: relative">
       <div class="shorten_link_field">
-        <form class="d-flex align-items-center justify-content-between" style="height: 11rem; padding: 0 4%;">
-          <input type="email" class="form-control input_field" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Shorten a link here...">
-          <button class="btn btn-sm shorten_button">Shorten It!</button>
+        <form class="d-flex flex-column justify-content-center flex-xxl-row align-items-center justify-content-xxl-between" [formGroup]="shortenUrl" (ngSubmit)="createShorterLink()" style="height: 11rem; padding: 0 4%;">
+          <input type="email" class="form-control input_field" formControlName="url" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Shorten a link here...">
+          <button class="btn btn-sm shorten_button mt-4 m-xxl-0">Shorten It!</button>
         </form>
       </div>
-      <div class="d-flex align-items-center justify-content-between link_field">
-        <div>
-          <p class="link">www.linked.com</p>
-        </div>
-        <div class="d-flex align-items-center">
-          <p class="shortened_link">www.linked.com</p>
-          <button class="btn btn-sm copy_button">Copy</button>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-between link_field">
-        <div>
-          <p class="link">www.linked.com</p>
-        </div>
-        <div class="d-flex align-items-center">
-          <p class="shortened_link">www.linked.com</p>
-          <button class="btn btn-sm copy_button" [ngClass]="{'violet' : isCopied, 'cyan' : !isCopied}" (click)="onClick()">{{isCopied ? 'Copied!':'Copy'}}</button>
-        </div>
-      </div>
+
+      <app-copy [link]="link" *ngFor="let link of shortLinks"></app-copy>
 
       <div class="d-flex justify-content-center">
         <div class="ad_statistics">
@@ -218,30 +102,30 @@
     <div>
       <img class="footer_logo_image" src="/assets/images/resources/logo.svg">
     </div>
-    <div style="width: 20%; color: white">
-      <p>Features</p>
-      <p>Link Shortening</p>
-      <p>Branded Links</p>
-      <p>Analytics</p>
+    <div style="width: 40%; color: white; margin: 5%; padding-left: 20%">
+      <b>Features</b>
+      <p class="mt-4 hover_link">Link Shortening</p>
+      <p class="hover_link">Branded Links</p>
+      <p class="hover_link">Analytics</p>
     </div>
-    <div style="width: 20%; color: white">
-      <p>Resources</p>
-      <p>Blog</p>
-      <p>Developers</p>
-      <p>Support</p>
+    <div style="color: white; margin: 5% 0%">
+      <b>Resources</b>
+      <p class="mt-4 hover_link">Blog</p>
+      <p class="hover_link">Developers</p>
+      <p class="hover_link">Support</p>
     </div>
-    <div style="width: 20%; color: white">
-      <p>Company</p>
-      <p>About</p>
-      <p>Our Team</p>
-      <p>Careers</p>
-      <p>Contacts</p>
+    <div style="color: white; margin: 5% 10%">
+      <b>Company</b>
+      <p class="mt-4 hover_link">About</p>
+      <p class="hover_link">Our Team</p>
+      <p class="hover_link">Careers</p>
+      <p class="hover_link">Contacts</p>
     </div>
-    <div class="d-flex" style="width: 20%">
-      <img src="/assets/images/resources/icon-facebook.svg">
-      <img src="/assets/images/resources/icon-twitter.svg">
-      <img src="/assets/images/resources/icon-pinterest.svg">
-      <img src="/assets/images/resources/icon-instagram.svg">
+    <div class="d-flex justify-content-between" style="width: 20%; margin: 5%; padding-right: 5%">
+      <img class="media_icon" src="/assets/images/resources/icon-facebook.svg">
+      <img class="media_icon" src="/assets/images/resources/icon-twitter.svg">
+      <img class="media_icon" src="/assets/images/resources/icon-pinterest.svg">
+      <img class="media_icon" src="/assets/images/resources/icon-instagram.svg">
     </div>
   </section>
 

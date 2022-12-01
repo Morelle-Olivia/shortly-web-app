@@ -59,7 +59,7 @@ a:hover {
 }
 .build_your_brand {
   width: 80%;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 400;
 }
 .get_started {
@@ -110,43 +110,12 @@ a:hover {
 .shorten_button:hover {
   background-color: hsl(180, 66%, 70%);
 }
-.link_field {
-  margin-top: 2%;
-  margin-bottom: -1%;
-  background-color: white;
-  height: 10%;
-  border-radius: 4px;
-  padding: 0 3% 0;
-}
-.link {
-  font-size: 25px;
-}
-.shortened_link {
-  font-size: 25px;
-  margin-top: 2%;
-  color: hsl(180, 66%, 49%);
-}
-.copy_button {
-  width: 7rem;
-  margin-left: 10%;
-  background-color: hsl(180, 66%, 49%);
-  color: white;
-}
-.copy_button:hover {
-  opacity: 50%;
-}
 .copied_field {
   height: 10%;
   margin-top: 1.5%;
   background-color: white;
   border-radius: 4px;
   padding: 0 3% 0;
-}
-.violet {
-  background-color: hsl(257, 27%, 26%);
-}
-.cyan {
-  background-color: hsl(180, 66%, 49%);
 }
 .ad_statistics {
   margin-top: 10%;
@@ -259,9 +228,22 @@ a:hover {
   position: relative;
 }
 .footer_logo_image {
-  weight: 40px;
-  padding: 5% 10% 2%;
+  font-weight: 700;
+  padding: 60% 80%;
   color: white;
+}
+.media_icon {
+  /*font-size: 5%;*/
+  height: 10%;
+  width: 17%;
+}
+.media_icon:hover {
+  color: hsl(180, 66%, 70%);
+  cursor: pointer;
+}
+.hover_link:hover {
+  color: hsl(180, 66%, 70%);
+  cursor: pointer;
 }
 
 @media (min-width: 1400px) {
@@ -277,6 +259,12 @@ a:hover {
   }
 }
 @media (max-width: 375px) {
+  .illustration_working_image {
+    /*margin-top: 8%;*/
+    margin-left: 0%;
+    /*height: 30rem;*/
+    /*overflow-x: hidden;*/
+  }
   .collapse {
     background-color: hsl(257, 27%, 26%);
     border-radius: 8px;
