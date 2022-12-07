@@ -11,6 +11,7 @@
   position: relative
 }
 .shorter_link {
+  line-height: 1;
   width: 100%;
   margin-top: 17%;
   font-size: 75px;
@@ -61,6 +62,9 @@
   width: 78%;
   height: 60px;
   border-radius: 10px;
+}
+.input-error {
+  border: red 1px solid;
 }
 .required_field {
   display: grid;

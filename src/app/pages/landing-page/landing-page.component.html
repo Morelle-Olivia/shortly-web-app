@@ -16,12 +16,15 @@
     <div class="shorten_link_class">
       <div class="shorten_link_field">
         <form class="d-flex flex-column justify-content-center flex-xxl-row align-items-center justify-content-xxl-between" [formGroup]="shortenUrl" (ngSubmit)="createShorterLink()" style="height: 11rem; padding: 0 4%;">
-          <input type="email" class="form-control input_field" formControlName="url" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Shorten a link here...">
-          <button class="btn btn-sm shorten_button mt-4 m-xxl-0">Shorten It!</button>
-          <div class="d-flex flex-column-reverse flex-xxl-row required_field"
-               *ngIf="(shortenForm['url'].touched || submitted) && shortenForm['url'].errors?.['required']">
-            Please add a link
+          <div class="input_field">
+            <input type="email" [ngClass]="{'input-error' : shortenForm['url'].touched}" class="form-control input_field" style="width: 100%" formControlName="url" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Shorten a link here...">
+
+            <div class="d-flex flex-column-reverse flex-xxl-row required_field"
+                 *ngIf="(shortenForm['url'].touched || submitted) && shortenForm['url'].errors?.['required']">
+              <i>Please add a link</i>
+            </div>
           </div>
+          <button class="btn btn-sm shorten_button mt-4 m-xxl-0">{{loader ? 'Shortening...':'Shorten It!'}}<app-loader *ngIf="loader"></app-loader></button>
         </form>
       </div>
 

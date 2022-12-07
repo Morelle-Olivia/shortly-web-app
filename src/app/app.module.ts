@@ -9,6 +9,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { CopyComponent } from './components/copy/copy.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import {RouterModule} from "@angular/router";
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {RouterModule} from "@angular/router";
     NavbarComponent,
     FooterComponent,
     CopyComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    LoaderComponent
   ],
   imports: [
     RouterModule,

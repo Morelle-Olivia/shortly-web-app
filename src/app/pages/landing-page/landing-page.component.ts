@@ -11,7 +11,9 @@ import {Subscription} from "rxjs";
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
+  shorten = false;
   submitted = false;
+  loader = false;
   shortenUrl = new FormGroup({});
   shortLinks: LinkShorteningModel[] = [];
   subscriptions: Subscription[] = [];
@@ -31,9 +33,11 @@ export class LandingPageComponent implements OnInit {
   }
 
   createShorterLink() {
+    this.loader = true;
     const subscription = this.shortenLinkService.createShortLink(this.shortenUrl.value.url)
       .subscribe( (res: LinkShorteningModel) => {
         this.shortLinks.push(res);
+        this.loader = false;
         this.localStorageService.setLinks(this.shortLinks);
         this.shortenUrl.reset();
       })
