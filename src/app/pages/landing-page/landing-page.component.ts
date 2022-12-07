@@ -33,6 +33,8 @@ export class LandingPageComponent implements OnInit {
     const subscription = this.shortenLinkService.createShortLink(this.shortenUrl.value.url)
       .subscribe( (res: LinkShorteningModel) => {
         this.localStorageService.setSettings(this.shortLinks.push(res));
+        // this.shortLinks.push(res);
+        // localStorage.setItem('shortLinks', JSON.stringify(this.shortLinks));
         this.shortenUrl.reset();
       })
     this.subscriptions.push(subscription);
