@@ -8,14 +8,14 @@ export class LocalStorageService {
 
   constructor() { }
 
-  setSettings(data: any) {
+  setLinks(data: any) {
     localStorage.setItem(this.storageName, JSON.stringify(data));
   }
 
-  // getUserSettings() {
-  //   let data = localStorage.getItem(this.storageName);
-  //   return JSON.parse(data);
-  // }
+  getLinks() {
+    let data = localStorage.getItem(this.storageName) || '[]';
+    return JSON.parse(data);
+  }
 
   clearUserSettings() {
     localStorage.removeItem(this.storageName);
