@@ -17,7 +17,7 @@
       <div class="shorten_link_field">
         <form class="d-flex flex-column justify-content-center flex-xxl-row align-items-center justify-content-xxl-between" [formGroup]="shortenUrl" (ngSubmit)="createShorterLink()" style="height: 11rem; padding: 0 4%;">
           <div class="input_field">
-            <input type="email" [ngClass]="{'input-error' : shortenForm['url'].touched}" class="form-control input_field" style="width: 100%" formControlName="url" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Shorten a link here...">
+            <input type="email" [ngClass]="{'input-error' : shortenForm['url'].invalid && shortenForm['url'].touched}" class="form-control input_field" style="width: 100%" formControlName="url" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Shorten a link here...">
 
             <div class="d-flex flex-column-reverse flex-xxl-row required_field"
                  *ngIf="(shortenForm['url'].touched || submitted) && shortenForm['url'].errors?.['required']">

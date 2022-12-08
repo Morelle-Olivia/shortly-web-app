@@ -64,7 +64,7 @@
   border-radius: 10px;
 }
 .input-error {
-  border: red 1px solid;
+  border: hsl(0, 87%, 67%) 1px solid;
 }
 .required_field {
   display: grid;
@@ -257,9 +257,9 @@
     position: relative
   }
   .build_your_brand {
-    width: 90%;
+    width: 100%;
     padding-left: 5%;
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 400;
   }
   .shorten_link_field {
@@ -275,6 +275,9 @@
   .ad_statistics {
     margin-top: 30%;
     width: 100%;
+  }
+  .track_link {
+    font-size: 19px;
   }
   .ccard {
     width: 20rem;
