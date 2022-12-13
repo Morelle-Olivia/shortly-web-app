@@ -2,7 +2,7 @@
   margin: 0% 6%
 }
 .menu {
-  display: inline-flex;
+  /*display: inline-flex;*/
 }
 ul {
   list-style: none;
@@ -22,6 +22,9 @@ ul {
 .nav-link:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+.nav_hr {
+  content: attr(hr);
 }
 .login {
   font-size: 18px;

@@ -11,7 +11,6 @@ import {Subscription} from "rxjs";
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
-  shorten = false;
   submitted = false;
   loader = false;
   shortenUrl = new FormGroup({});
