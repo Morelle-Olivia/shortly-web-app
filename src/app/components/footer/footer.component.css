@@ -44,14 +44,14 @@
   margin: 5%;
   padding-right: 5%
 }
-@media (max-width: 375px) {
+@media (max-width: 800px) {
   .footer_logo_image {
     padding: 60% 2%;
   }
   .features_column {
     text-align: center;
     margin: 0% 0%;
-    padding-left: 5%
+    padding-left: 3%
   }
   .hover_link {
     font-weight: 300;

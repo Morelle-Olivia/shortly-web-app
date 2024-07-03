@@ -4,6 +4,7 @@ import {LinkShorteningModel} from "../../model/link-shortening.model";
 import {ShortenLinkService} from "../../services/shorten-link.service";
 import {LocalStorageService} from "../../services/local-storage/local-storage.service";
 import {Subscription} from "rxjs";
+import {HttpErrorResponse} from "@angular/common/http";
 
 @Component({
   selector: 'app-landing-page',
@@ -33,14 +34,16 @@ export class LandingPageComponent implements OnInit {
 
   createShorterLink() {
     this.loader = true;
+    console.log(this.shortenUrl.value.url)
     const subscription = this.shortenLinkService.createShortLink(this.shortenUrl.value.url)
-      .subscribe( (res: LinkShorteningModel) => {
-        this.shortLinks.push(res);
-        this.loader = false;
-        this.localStorageService.setLinks(this.shortLinks);
+      .subscribe( (res) => {
+        // this.shortLinks.push(res);
+        console.log(res)
+        // this.loader = false;
+        console.log(this.localStorageService.setLinks(this.shortLinks));
         this.shortenUrl.reset();
-      })
-    this.subscriptions.push(subscription);
+      }, (error: HttpErrorResponse) => {}).add(() => this.loader = false);
+    // this.subscriptions.push(subscription);
   }
 
 }

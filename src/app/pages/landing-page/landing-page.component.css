@@ -238,14 +238,15 @@
     transform: translateX(0%);
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .illustration_working_image {
     margin-left: 0%;
   }
   .shorter_link {
     /*width: 5%;*/
-    font-size: 55px;
-    padding: 0% 7%;
+    font-size: 50px;
+    padding-left: 9%;
+    /*padding: 0% 3%;*/
   }
   .header {
     width: 22rem;
@@ -266,12 +267,12 @@
   }
   .stats {
     width: 10%;
-    font-size: 33px;
     margin-left: 0%
   }
   .ad_statistics {
     margin-top: 30%;
     width: 100%;
+    font-size: 12px;
   }
   .track_link {
     font-size: 19px;
@@ -292,5 +293,28 @@
     margin-top: 26%;
     width: 90%;
     font-size: 30px;
+  }
+}
+
+@media (max-width: 975px) {
+  .stats {
+    font-size: 27px;
+    margin-left: 0%
+  }
+  .header {
+    width: 30rem;
+    text-align: center;
+    margin: 2% 0%;
+    position: relative
+  }
+  .shorter_link {
+    font-size: 50px;
+    /*padding-left: 9%;*/
+  }
+  .build_your_brand {
+    width: 100%;
+    padding: 5%;
+    font-size: 22px;
+    font-weight: 400;
   }
 }
